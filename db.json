@@ -1,0 +1,256 @@
+{
+  "users": {
+    "user_achiever": {
+      "profile": {
+        "username": "user_achiever",
+        "name": "User",
+        "phoneNumber": "0000000000",
+        "isOnboarded": true,
+        "onboarding": {
+          "wakeTime": "07:00",
+          "sleepTime": "23:00",
+          "workHours": "09:00-17:00",
+          "studyHours": 4,
+          "preferences": [
+            "Heavy Accountability",
+            "Supportive Gamification",
+            "Witty Accountable Humour"
+          ],
+          "goalsText": "Build Chronova AI startup and prepare for tech placements",
+          "deadlineDate": "2026-07-15"
+        },
+        "xp": 350,
+        "level": 3,
+        "streak": 5,
+        "productivityScore": 82,
+        "focusHours": 14.5,
+        "emailVerified": true,
+        "phoneVerified": true,
+        "active": true,
+        "locked": false,
+        "failedLoginAttempts": 0,
+        "lockUntil": null,
+        "passwordHash": "05c8bb086660c580d539446483c3b97f978de8c9b4b2a16d389aabb376e8d6b0"
+      },
+      "goals": [
+        {
+          "id": "g1",
+          "title": "Prepare for Software Placement",
+          "description": "Crack the upcoming coding interviews and master CS core concepts.",
+          "deadline": "2026-07-20",
+          "priority": "high",
+          "successProbability": 78,
+          "riskLevel": "Medium",
+          "delayRisk": 22,
+          "category": "Job Seeker",
+          "subtasks": [
+            {
+              "id": "s1_1",
+              "title": "Review LeetCode Trees & Graphs questions",
+              "completed": true,
+              "durationMinutes": 90,
+              "scheduledTime": "09:30",
+              "status": "completed",
+              "postponementCount": 0
+            },
+            {
+              "id": "s1_2",
+              "title": "Practice DBMS SQL Queries and Joins",
+              "completed": false,
+              "durationMinutes": 60,
+              "scheduledTime": "11:30",
+              "status": "pending",
+              "postponementCount": 1
+            },
+            {
+              "id": "s1_3",
+              "title": "Take Operating System Mock Quiz",
+              "completed": false,
+              "durationMinutes": 45,
+              "scheduledTime": "15:00",
+              "status": "pending",
+              "postponementCount": 0
+            },
+            {
+              "id": "s1_4",
+              "title": "Structure behavioral story cards using STAR framework",
+              "completed": false,
+              "durationMinutes": 60,
+              "scheduledTime": "17:30",
+              "status": "pending",
+              "postponementCount": 0
+            }
+          ]
+        },
+        {
+          "id": "g2",
+          "title": "Launch Chronova AI Tech Demo",
+          "description": "Complete design, server integrations, and pitch-grade demo.",
+          "deadline": "2026-06-30",
+          "priority": "high",
+          "successProbability": 91,
+          "riskLevel": "Low",
+          "delayRisk": 9,
+          "category": "Entrepreneur",
+          "subtasks": [
+            {
+              "id": "s2_1",
+              "title": "Code full-stack server endpoints with express",
+              "completed": true,
+              "durationMinutes": 120,
+              "scheduledTime": "10:00",
+              "status": "completed",
+              "postponementCount": 0
+            },
+            {
+              "id": "s2_2",
+              "title": "Design the visual AI coach UI view with quick-read swipe cards",
+              "completed": true,
+              "durationMinutes": 90,
+              "scheduledTime": "13:30",
+              "status": "completed",
+              "postponementCount": 0
+            },
+            {
+              "id": "s2_3",
+              "title": "Implement Interactive Consequence Simulator slider",
+              "completed": false,
+              "durationMinutes": 60,
+              "scheduledTime": "16:00",
+              "status": "pending",
+              "postponementCount": 0
+            },
+            {
+              "id": "s2_4",
+              "title": "Integrate WhatsApp notification layout testing framework",
+              "completed": false,
+              "durationMinutes": 45,
+              "scheduledTime": "19:00",
+              "status": "pending",
+              "postponementCount": 2
+            }
+          ]
+        }
+      ],
+      "excuseLogs": [
+        {
+          "id": "e1",
+          "excuse": "I was feeling a bit tired after lunch, will do it tomorrow.",
+          "aiResponse": "😴 Chronova AI Coach says: 'Sleeping off your goals? Your competitors are ordering double shots of espresso right now. Task postponed for the 3rd time!'",
+          "timestamp": "2026-06-22T14:15:00-07:00",
+          "goalTitle": "Prepare for Software Placement",
+          "consequence": "Pushes your OS mock quiz to night slot, and chips away 3% off your Placement Success Probability."
+        },
+        {
+          "id": "e2",
+          "excuse": "Insta reels were too addictive today, got stuck in a scroll hole.",
+          "aiResponse": "📱 Chronova AI Coach says: 'Our dashboard shows you are scrolling infinitely. No amount of scrolling can bring back lost time. Breaking news: Your dream job's salary just refused to load.'",
+          "timestamp": "2026-06-23T08:30:00-07:00",
+          "goalTitle": "Launch Chronova AI Tech Demo",
+          "consequence": "Increases Delay Risk from 5% to 9% for the launch demo goal."
+        }
+      ],
+      "notifications": [
+        {
+          "id": "n1",
+          "title": "🚨 Alert from Future You",
+          "message": "Breaking News: Your deadline refused to move. Put down the scroll and pick up the IDE.",
+          "type": "humor",
+          "timestamp": "5 mins ago",
+          "whatsappTemplate": "Hey User! 🚀 Chronova reminder: Your deadline is approaching faster than your salary. OS Mock Quiz is awaiting your attention. Reply with 'RECOVER' to shrink the delay risk!",
+          "emailTemplate": "Subject: Chronova Coached Digest - Your future self has concerns...\n\nHi User,\n\nYou logged 2 postponements today. Your placements success probability is dropping to 78%. We suggest triggering Chronova Recovery Mode immediately in your dashboard.",
+          "pushChannel": "Browser Popup: Scroll loop detected. Work progress: 0%."
+        },
+        {
+          "id": "n2",
+          "title": "💡 AI Recalibration complete",
+          "message": "Chronova has compressed 3 subtasks to recover work hours safely.",
+          "type": "recovery",
+          "timestamp": "1 hour ago",
+          "whatsappTemplate": "Chronova Recovery Mode Activated. We skipped the 30min leisure slot and combined DBMS review directly with DSA review. Let's do this!",
+          "emailTemplate": "Subject: Chronova AI Recovery Plan Success!\n\nYour tasks have been reprioritized. We combined software interview preparations into high-impact sprint cycles.",
+          "pushChannel": "Chronova Recovery: OS mock review rearranged to 15:00."
+        }
+      ],
+      "lastUpdate": "2026-06-27T12:58:52.878Z"
+    },
+    "shivani": {
+      "profile": {
+        "username": "shivani",
+        "name": "shivani",
+        "phoneNumber": "",
+        "isOnboarded": true,
+        "xp": 150,
+        "level": 2,
+        "streak": 1,
+        "productivityScore": 67,
+        "focusHours": 0,
+        "emailVerified": false,
+        "phoneVerified": false,
+        "active": true,
+        "locked": false,
+        "failedLoginAttempts": 0,
+        "lockUntil": null,
+        "passwordHash": "",
+        "onboarding": {
+          "wakeTime": "07:00",
+          "sleepTime": "23:00",
+          "workHours": "09:00-17:00",
+          "studyHours": 4,
+          "preferences": [
+            "Heavy Accountability",
+            "Witty Accountable Humour"
+          ],
+          "goalsText": "make pasta",
+          "deadlineDate": "2026-06-27",
+          "enableReminders": true
+        }
+      },
+      "goals": [
+        {
+          "id": "g_1782565169165",
+          "title": "make pasta",
+          "description": "Targeting deadline on 2026-06-27. Created from your onboarding profile.",
+          "deadline": "2026-06-27",
+          "priority": "high",
+          "successProbability": 80,
+          "riskLevel": "Low",
+          "delayRisk": 20,
+          "category": "Professional",
+          "subtasks": [],
+          "completed": true
+        }
+      ],
+      "excuseLogs": [
+        {
+          "id": "e_1782565394583",
+          "excuse": "dont feel like eating it",
+          "aiResponse": "Refusing to make pasta because you 'don't feel like eating' is like declining your salary because you don't feel like opening your banking app. You are overdrafting on your future energy reserves, so stop the emotional bankruptcy and go boil the water before your motivation flatlines.",
+          "timestamp": "2026-06-27T13:03:14.583Z",
+          "goalTitle": "make pasta",
+          "consequence": "You will inevitably end up starving at midnight, staring regretfully into an empty fridge before resorting to panic-eating raw block cheese over the sink."
+        }
+      ],
+      "notifications": [
+        {
+          "id": "n_1782565394583",
+          "title": "⚠️ High Delay Warning",
+          "message": "Refusing to make pasta because you 'don't feel like eating' is like declining your salary because you don't feel like opening your banking app. You are overdrafting on your future energy reserves, so stop the emotional bankruptcy and go boil the water before your motivation flatlines.",
+          "type": "humor",
+          "timestamp": "Just now",
+          "emailTemplate": "Subject: Excuse Logged & Success Rate Dropping - Chronova\n\nHi shivani,\n\nYou gave an excuse for \"Task\".\n\nExcuse: \"dont feel like eating it\"\nConsequence: You will inevitably end up starving at midnight, staring regretfully into an empty fridge before resorting to panic-eating raw block cheese over the sink.\n\nLet's beat this procrastination cycle step-by-step.",
+          "pushChannel": "Browser Push: Consequence simulation has updated. Risk is RED."
+        },
+        {
+          "id": "welcome",
+          "title": "🙏🏽 Welcome to Chronova!",
+          "message": "No active goals yet. Click 'Add Custom Goal' above or complete onboarding to schedule your first milestone.",
+          "type": "info",
+          "timestamp": "Just now"
+        }
+      ],
+      "lastUpdate": "2026-06-27T13:15:43.780Z"
+    }
+  },
+  "deletedUsers": []
+}

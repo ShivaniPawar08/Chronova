@@ -1,0 +1,10 @@
+{
+  "name": "Remix: Chronova",
+  "description": "An AI-powered productivity companion that predicts missed deadlines, auto-generates recovery schedules, and manages procrastination to ensure execution before deadlines.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

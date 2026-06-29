@@ -14,7 +14,6 @@ import {
   ShieldCheck, 
   Users, 
   Zap, 
-  Chrome, 
   Lock, 
   Key, 
   UserPlus, 
@@ -196,43 +195,6 @@ export default function LandingPage({ onLoginSuccess }: LandingPageProps) {
     e.preventDefault();
   };
 
-  // Google Sign-In with auto-registration or instant verified sign in
-  const handleGoogleLogin = () => {
-    setErrorMsg("");
-    setSuccessMsg("Connecting securely with Google OAuth 2.0...");
-    setLoading(true);
-
-    setTimeout(async () => {
-      const mockGoogleUsername = "user_achiever";
-      const mockGoogleName = "Happy User";
-
-      try {
-        const response = await fetch("/api/google-login", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            username: mockGoogleUsername,
-            name: mockGoogleName,
-            googleId: "google-oauth2-id-10928374"
-          })
-        });
-
-        const data = await response.json();
-        if (!response.ok) {
-          setErrorMsg(data.error || "Google login failed.");
-          setLoading(false);
-          return;
-        }
-
-        setShowAuthModal(false);
-        onLoginSuccess(mockGoogleUsername, data.user);
-      } catch (err) {
-        setErrorMsg("Failed to login with Google.");
-      } finally {
-        setLoading(false);
-      }
-    }, 1000);
-  };
 
   const toggleFaq = (index: number) => {
     setOpenFaq(openFaq === index ? null : index);
@@ -1021,21 +983,6 @@ export default function LandingPage({ onLoginSuccess }: LandingPageProps) {
                     </form>
                   )}
 
-                  {/* Separator */}
-                  <div className="flex items-center justify-between text-[10px] text-slate-500 font-mono">
-                    <span className="w-1/3 h-[1px] bg-white/5" />
-                    <span>OR CONTINUE WITH</span>
-                    <span className="w-1/3 h-[1px] bg-white/5" />
-                  </div>
-
-                  {/* Google login Button */}
-                  <button 
-                    onClick={handleGoogleLogin}
-                    disabled={loading}
-                    className="w-full bg-[#030712] hover:bg-zinc-900 border border-zinc-800 text-slate-200 font-bold py-3 rounded-xl text-xs flex items-center justify-center gap-2 transition-all cursor-pointer"
-                  >
-                    <Chrome className="w-4 h-4 text-pink-500" /> Use Google OAuth 2.0
-                  </button>
 
                 </div>
               </div>
